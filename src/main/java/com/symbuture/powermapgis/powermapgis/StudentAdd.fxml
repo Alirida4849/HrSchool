@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="1000.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.symbuture.powermapgis.powermapgis.StudentAddController">
+
+    <stylesheets>
+        <URL value="@studentadd.css" />
+    </stylesheets>
+
+    <children>
+
+        <!-- العنوان -->
+        <Label fx:id="lblTitle" alignment="CENTER" layoutX="50.0" layoutY="20.0" prefHeight="40.0" prefWidth="900.0" text="إضافة طالب جديد" textFill="#192c83">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+
+
+        <!-- ================= الاسم ================= -->
+
+        <Label fx:id="lblFullName" alignment="CENTER_RIGHT" layoutX="520.0" layoutY="85.0" prefHeight="30.0" prefWidth="180.0" text="الاسم الكامل" textFill="#192c83">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="txtFullName" alignment="CENTER_RIGHT" layoutX="430.0" layoutY="120.0" prefHeight="38.0" prefWidth="270.0" promptText="أدخل الاسم الكامل" />
+
+
+        <!-- ================= اسم الأم ================= -->
+
+        <Label fx:id="lblMotherName" alignment="CENTER_RIGHT" layoutX="100.0" layoutY="85.0" prefHeight="30.0" prefWidth="180.0" text="اسم الأم" textFill="#192c83">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="txtMotherName" alignment="CENTER_RIGHT" layoutX="10.0" layoutY="120.0" prefHeight="38.0" prefWidth="270.0" promptText="أدخل اسم الأم" />
+
+
+        <!-- ================= الصف ================= -->
+
+        <Label fx:id="lblClass" alignment="CENTER_RIGHT" layoutX="520.0" layoutY="175.0" prefHeight="30.0" prefWidth="180.0" text="الصف" textFill="#192c83">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <ComboBox fx:id="cmbClass" layoutX="430.0" layoutY="210.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="38.0" prefWidth="270.0" promptText="اختر الصف" />
+
+
+        <!-- ================= الشعبة ================= -->
+
+        <Label fx:id="lblSection" alignment="CENTER_RIGHT" layoutX="100.0" layoutY="175.0" prefHeight="30.0" prefWidth="180.0" text="الشعبة" textFill="#192c83">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <ComboBox fx:id="cmbSection" layoutX="10.0" layoutY="210.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="38.0" prefWidth="270.0" promptText="اختر الشعبة" />
+
+
+        <!-- ================= المواليد ================= -->
+
+        <Label fx:id="lblBirthDate" alignment="CENTER_RIGHT" layoutX="520.0" layoutY="265.0" prefHeight="30.0" prefWidth="180.0" text="المواليد" textFill="#192c83">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <DatePicker fx:id="dateBirth" layoutX="430.0" layoutY="300.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="38.0" prefWidth="270.0" promptText="اختر تاريخ الميلاد" />
+
+
+        <!-- ================= هاتف ولي الأمر ================= -->
+
+        <Label fx:id="lblParentPhone" alignment="CENTER_RIGHT" layoutX="100.0" layoutY="265.0" prefHeight="30.0" prefWidth="180.0" text="رقم هاتف ولي الأمر" textFill="#192c83">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="txtParentPhone" layoutX="10.0" layoutY="300.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="38.0" prefWidth="270.0" promptText="07xxxxxxxxx" />
+
+
+        <!-- ================= البطاقة الوطنية ================= -->
+
+        <Label fx:id="lblNationalId" alignment="CENTER_RIGHT" layoutX="520.0" layoutY="355.0" prefHeight="30.0" prefWidth="180.0" text="رقم البطاقة الوطنية" textFill="#192c83">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="txtNationalId" layoutX="430.0" layoutY="390.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="38.0" prefWidth="270.0" promptText="أدخل رقم البطاقة الوطنية" />
+
+
+        <!-- ================= بطاقة السكن ================= -->
+
+        <Label fx:id="lblResidenceCard" alignment="CENTER_RIGHT" layoutX="100.0" layoutY="355.0" prefHeight="30.0" prefWidth="180.0" text="رقم بطاقة السكن" textFill="#192c83">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <TextField fx:id="txtResidenceCard" layoutX="10.0" layoutY="390.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="38.0" prefWidth="270.0" promptText="أدخل رقم بطاقة السكن" />
+
+
+        <!-- ================= الصورة الشخصية ================= -->
+
+        <Label fx:id="lblPhoto" alignment="CENTER" layoutX="760.0" layoutY="85.0" prefHeight="30.0" prefWidth="200.0" text="الصورة الشخصية" textFill="#192c83">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <ImageView fx:id="imgStudent" fitHeight="170.0" fitWidth="200.0" layoutX="760.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../../Downloads/profile-avatar.png" />
+         </image></ImageView>
+
+        <Button fx:id="btnChooseImage" layoutX="760.0" layoutY="305.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="200.0" text="اختيار صورة" />
+
+        <Button fx:id="btnDeleteImage" layoutX="760.0" layoutY="355.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="200.0" text="حذف الصورة" />
+
+
+        <!-- ================= الملاحظات ================= -->
+
+        <Label fx:id="lblNotes" alignment="CENTER_RIGHT" layoutX="520.0" layoutY="445.0" prefHeight="30.0" prefWidth="180.0" text="ملاحظات" textFill="#192c83">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+
+        <TextArea fx:id="txtNotes" layoutX="10.0" layoutY="480.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="80.0" prefWidth="690.0" promptText="أدخل أي ملاحظات" />
+
+
+        <!-- ================= أزرار الحفظ والإلغاء ================= -->
+
+        <Button fx:id="btnSave" layoutX="760.0" layoutY="480.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="حفظ الطالب" />
+
+        <Button fx:id="btnCancel" layoutX="760.0" layoutY="530.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" text="إلغاء" />
+
+    </children>
+</AnchorPane>
