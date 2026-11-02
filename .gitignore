@@ -1,0 +1,29 @@
+
+# Build files
+target/
+output/
+installer/
+build/
+dist/
+package-input/
+
+# NetBeans
+nbproject/private/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# Generated files
+dependency-reduced-pom.xml
+
+# Secrets
+.env
+*.pem
+*.key

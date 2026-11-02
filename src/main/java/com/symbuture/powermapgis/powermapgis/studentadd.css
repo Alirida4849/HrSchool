@@ -1,0 +1,244 @@
+/* =========================
+   الواجهة الرئيسية
+   ========================= */
+
+.mainFxmlClass {
+    -fx-background-color: #f4f7fb;
+    -fx-font-family: "Arial";
+}
+
+
+/* =========================
+   حقول الإدخال
+   ========================= */
+
+.text-field,
+.combo-box,
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #d5dce8;
+    -fx-border-width: 1px;
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-padding: 0 12px 0 12px;
+    -fx-font-size: 14px;
+}
+
+
+/* عند الضغط على الحقل */
+
+.text-field:focused,
+.combo-box:focused,
+.date-picker:focused {
+    -fx-border-color: #2563eb;
+    -fx-border-width: 2px;
+    -fx-background-color: white;
+}
+
+
+/* =========================
+   النص داخل TextField
+   ========================= */
+
+.text-field {
+    -fx-text-fill: #1e293b;
+}
+
+
+/* =========================
+   ComboBox
+   ========================= */
+
+.combo-box {
+    -fx-cursor: hand;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: white;
+    -fx-text-fill: #1e293b;
+    -fx-font-size: 14px;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+    -fx-border-color: #d5dce8;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #eaf2ff;
+    -fx-text-fill: #1d4ed8;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+}
+
+
+/* =========================
+   DatePicker
+   ========================= */
+
+.date-picker {
+    -fx-cursor: hand;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #2563eb;
+    -fx-background-radius: 0 7px 7px 0;
+}
+
+.date-picker .arrow-button:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+.date-picker .arrow-button .arrow {
+    -fx-background-color: white;
+}
+
+
+/* =========================
+   TextArea
+   ========================= */
+
+.text-area {
+    -fx-background-color: white;
+    -fx-border-color: #d5dce8;
+    -fx-border-radius: 7px;
+    -fx-background-radius: 7px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #1e293b;
+}
+
+.text-area:focused {
+    -fx-border-color: #2563eb;
+    -fx-border-width: 2px;
+}
+
+.text-area .content {
+    -fx-background-color: white;
+    -fx-background-radius: 7px;
+}
+
+
+/* =========================
+   جميع الأزرار
+   ========================= */
+
+.button {
+    -fx-background-color: #2563eb;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-cursor: hand;
+}
+
+
+/* تأثير مرور الماوس */
+
+.button:hover {
+    -fx-background-color: #1d4ed8;
+}
+
+
+/* عند الضغط */
+
+.button:pressed {
+    -fx-background-color: #1e40af;
+}
+
+
+/* =========================
+   زر اختيار الصورة
+   ========================= */
+
+#btnChooseImage {
+    -fx-background-color: #0ea5e9;
+}
+
+#btnChooseImage:hover {
+    -fx-background-color: #0284c7;
+}
+
+
+/* =========================
+   زر حذف الصورة
+   ========================= */
+
+#btnDeleteImage {
+    -fx-background-color: #ef4444;
+}
+
+#btnDeleteImage:hover {
+    -fx-background-color: #dc2626;
+}
+
+
+/* =========================
+   زر حفظ الطالب
+   ========================= */
+
+#btnSave {
+    -fx-background-color: #16a34a;
+    -fx-font-size: 15px;
+}
+
+#btnSave:hover {
+    -fx-background-color: #15803d;
+}
+
+
+/* =========================
+   زر الإلغاء
+   ========================= */
+
+#btnCancel {
+    -fx-background-color: #64748b;
+}
+
+#btnCancel:hover {
+    -fx-background-color: #475569;
+}
+
+
+/* =========================
+   صورة الطالب
+   ========================= */
+
+#imgStudent {
+    -fx-background-color: white;
+    -fx-border-color: #cbd5e1;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
+
+/* =========================
+   عنوان الصفحة
+   ========================= */
+
+#lblTitle {
+    -fx-font-weight: bold;
+    -fx-text-fill: #172554;
+}
+
+
+/* =========================
+   عناوين الحقول
+   ========================= */
+
+#lblFullName,
+#lblMotherName,
+#lblClass,
+#lblSection,
+#lblBirthDate,
+#lblParentPhone,
+#lblNationalId,
+#lblResidenceCard,
+#lblPhoto,
+#lblNotes {
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e3a8a;
+}
