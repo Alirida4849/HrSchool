@@ -1,0 +1,61 @@
+
+.root {
+    -fx-font-family: "Arial";
+}
+
+.mainFxmlClass {
+    -fx-background-color: linear-gradient(
+        to bottom right,
+        #0f172a,
+        #1e3a8a,
+        #0369a1
+    );
+}
+
+/* عنوان المدرسة */
+.school-title {
+    -fx-text-fill: white;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+/* البحث */
+.search-field {
+    -fx-background-color: white;
+    -fx-background-radius: 12px;
+    -fx-border-color: #38bdf8;
+    -fx-border-radius: 12px;
+    -fx-border-width: 2px;
+    -fx-padding: 12px;
+    -fx-font-size: 15px;
+}
+
+/* البطاقات */
+.menu-card {
+-fx-background-color: #ffffff;
+    -fx-background-radius: 18px;
+    -fx-border-color: #dbeafe;
+    -fx-border-radius: 18px;
+    -fx-border-width: 1.5px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(
+        gaussian, rgba(0,0,0,0.18), 12, 0.15, 0, 4
+    );
+}
+#1842b5
+/* عناوين البطاقات */
+.card-title {
+  -fx-background-color: #1842b5;
+   
+}
+
+/* وصف البطاقات */
+.card-description {
+   
+}
+
+/* التذييل */
+.footer-label {
+    -fx-text-fill: #bfdbfe;
+    -fx-font-size: 13px;
+}
